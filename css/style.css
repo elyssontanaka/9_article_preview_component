@@ -117,7 +117,6 @@ body {
     bottom: 0;
     left: 0;
     padding: 0 2.5rem 0 2.5rem;
-    z-index: 1;
 }
 
 .share-text {
@@ -125,7 +124,7 @@ body {
     color: var(--grayish-blue);
 }
 
-.sm-container a i{
+.sm-container a i {
     color: var(--light-grayish-blue);
 }
 
@@ -158,4 +157,77 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* DESKTOP */
+@media (min-width: 960px) {
+    .card-container {
+        display: flex;
+        max-width: 54.7rem;
+        height: 21rem;
+        overflow: visible;
+    }
+
+    .card-picture {
+        width: 39%;
+        height: auto;
+        object-fit: cover;
+        object-position: top 0 left 0;
+        border-top-left-radius: .7rem;
+        border-bottom-left-radius: .7rem;
+    }
+
+    .card-info {
+        width: 61%;
+        padding: 2.5rem 3rem 0 3rem;
+        position: relative;
+    }
+
+    .card-title {
+        font-size: 1.55rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: var(--very-dark-grayish-blue);
+    }
+
+    .card-text {
+        color: var(--desaturated-dark-blue);
+        padding: .7rem .7rem 1.5rem 0;
+        line-height: 1.5;
+    }
+
+    .bottom-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .author-box {
+        position: relative;
+        right: 5.4rem;
+    }
+
+    .share-container {
+        width: 18.5rem;
+        height: 4.1rem;
+        bottom: 7rem;
+        left: 20rem;
+        display: flex;
+    }
+
+    .share-icon-2 {
+        display: none;
+    }
+
+    .sm-container{
+        width: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-brands {
+        padding: 0 0 0 0;
+        right: 0;
+    }
 }
